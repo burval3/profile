@@ -4,7 +4,9 @@ body {
   background-color: #EBEBEB;
   color: rgb(180,180,180);
   font-weight: lighter;
-  background-image: url("images/cloudy-day.jpg");
+  background-repeat:no-repeat;
+  background-image: linear-gradient(to right bottom, #966090, #9770a3, #9780b4, #978fc4, #979fd2, #98a8d9, #99b2df, #9cbbe5, #9dc0e8, #9fc5eb, #a1c9ee, #a3cef1);
+  /*background-image: url("images/cloudy-day.jpg");*/
 }
 
 h1 {
@@ -28,6 +30,7 @@ h2, h3 {
 h3 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 5px;
+  color: rgb(180,180,180);
   font-weight: lighter;
 }
 
@@ -38,6 +41,8 @@ a {
 
 a:hover {
   color: #A3CEF1;
+  transition: all 0.5s ease-out;
+
 }
 .text-center {
   text-align: center;
@@ -59,9 +64,7 @@ a:hover {
 .img-circle {
   border-radius: 50%;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
-  /*border-color: #A3CEF1;
-  border-style: dashed;
-  border-width: 15px;*/
+
 }
 
 .btn-blue {
@@ -94,15 +97,50 @@ td {
 
 }
 
+
 #fav {
   padding-bottom: 40px;
-  letter-spacing: 25px;
+  letter-spacing: 3px;
   font-size: 23px;
+  /*font-weight:bolder;*/
+  color: rgb(180,180,180);
 }
 
 .mvs-shadow {
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
 
+}
+
+.presentation {
+  margin-bottom: 40px;
+}
+
+.achievement-content {
+  /*display: flex;
+  justify-content: space-between;*/
+  /*width: 350px;*/
+  width: fit-content;
+}
+
+p.achievement-text {
+  text-align: text-center;
+  border-left-color: #a3cef1;
+  border-left-style: solid;
+  padding: 5px;
+  border-left-width: 7px;
+  border-radius: 0px;
+}
+
+p.achievement-text:hover {
+  /*background-color:#EBEBEB ;*/
+  transition: all 0.5s ease-out;
+  opacity: 1;
+  font-size: 18px;
+}
+.achievement-photo {
+
+  width: 100%;
+  border-radius: 3px;
 }
 
 @media (max-width: 960px) {
@@ -124,10 +162,12 @@ td {
   }
 }
 
-.presentation {
-  margin-bottom: 40px;
+ul {
+  padding: 0;
+
 }
 
-
-
+.about {
+  font-size: 12px;
+}
 
